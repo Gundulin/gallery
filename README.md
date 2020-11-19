@@ -29,3 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deploying to Github Pages
 
 https://github.com/angular-schule/angular-cli-ghpages is the best reference.
+
+ng deploy --base-href=/gallery/
