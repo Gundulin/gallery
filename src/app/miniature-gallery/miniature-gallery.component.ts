@@ -16,7 +16,7 @@ export class MiniatureGalleryComponent implements OnInit {
   showGallery(index: number) {
     let prop = {
       images: [
-        { path: '/assets/DG_pfp_100.jpg' }, 
+        { path: 'https://github.com/Gundulin/gallery/blob/master/src/assets/DG_pfp_100.jpg' }, 
       ],
       index
     };
