@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Gallery } from 'angular-gallery';
 
 @Component({
   selector: 'app-miniature-gallery',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiniatureGalleryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gallery: Gallery) { }
 
   ngOnInit(): void {
+  }
+
+  showGallery(index: number) {
+    let prop = {
+      images: [
+        { path: '/assets/DG_pfp_100.jpg' }, 
+      ],
+      index
+    };
+    this.gallery.load(prop);
   }
 
 }
