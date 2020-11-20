@@ -10,6 +10,9 @@ MIT
 @angular/router
 MIT
 
+angular-gallery
+Apache License 2.0
+
 css-loader
 MIT
 Copyright JS Foundation and other contributors
