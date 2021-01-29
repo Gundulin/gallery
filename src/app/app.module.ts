@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MiniatureGalleryComponent } from './miniature-gallery/miniature-gallery.component';
 import { IvyGalleryModule } from 'angular-gallery';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { IvyGalleryModule } from 'angular-gallery';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IvyGalleryModule
+    IvyGalleryModule,
+    NgxGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

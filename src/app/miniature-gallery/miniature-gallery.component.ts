@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Gallery } from 'angular-gallery';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 
 @Component({
   selector: 'app-miniature-gallery',
@@ -7,6 +8,8 @@ import { Gallery } from 'angular-gallery';
   styleUrls: ['./miniature-gallery.component.scss']
 })
 export class MiniatureGalleryComponent implements OnInit {
+  galleryOptions: NgxGalleryOptions[];
+  galleryImages: NgxGalleryImage[];
 
   constructor(private gallery: Gallery) { }
 
@@ -16,7 +19,7 @@ export class MiniatureGalleryComponent implements OnInit {
   showGallery(index: number) {
     let prop = {
       images: [
-        { path: 'https://github.com/Gundulin/gallery/blob/master/src/assets/DG_pfp_100.jpg' }, 
+        { path: '../assets/DG_pfp.jpg' }, 
       ],
       index
     };
